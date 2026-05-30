@@ -51,7 +51,7 @@ class TaskController extends Controller
     public function edit(Task $task) # leva para a página com o formulario de editar
     {
         //
-        return view('tasks.edit', compact('tasks'));
+        return view('tasks.edit', compact('task'));
     }
 
     public function update(Request $request, Task $task) # lógica para editar
